@@ -73,7 +73,7 @@ def watershed_segmentation(image, params):
 # 🔹 SERVIDOR FLASK
 # ==========================================
 
-app = Flask(_name_)
+app = Flask(__name__)
 CORS(app)
 
 @app.route('/')
@@ -113,3 +113,4 @@ def segment_image():
 if _name_ == '__main__':
 
     app.run(host='0.0.0.0', port=5000)
+
